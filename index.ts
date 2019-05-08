@@ -4,15 +4,14 @@ const express = require('express')
 // import * apiRoutes from './build/'
 
 // Initialise the app
-const app: express.Application = express()
+const app = express()
 
 // set up server port
 const port = process.env.port || 8080
 
 // Send message for default URL
-app.get('/', function(req, res) {
-    res.send('Hello world with express')
-})
+app.get('/', (req, res) => res.send('Hello World with Express'))
+
 
 // Launch app to listen to specified port
 app.listen(port, function(){
