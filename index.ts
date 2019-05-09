@@ -1,7 +1,7 @@
 // Import express
 import express from "express"
 // Imports routes
-import apiRoutes from "api-routes.js"
+import apiRoutes from "./api-routes"
 
 // import * as express from "express"
 // import * apiRoutes from './build/'
@@ -19,8 +19,6 @@ app.get('/', (request, response) => response.send('Hello World with Express.'))
 app.listen(port, function(){
     console.log(`Listening on port ${port}`)
 })
-
-
 
 // Use API routes in the app.
 app.use('/api', apiRoutes)
